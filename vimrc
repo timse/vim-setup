@@ -16,6 +16,9 @@ set hlsearch
 " line numbers
 set number
 
+" highlight the cursorline
+set cursorline
+
 " show tabs, line endings and trailing spaces
 set listchars=tab:▸\ ,eol:¬,trail:␣,extends:⇉,precedes:⇇,nbsp:·
 set list!
@@ -48,7 +51,7 @@ if has("autocmd")
   autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
   autocmd FileType ruby setlocal ts=2 sts=2 sw=2 expandtab
   autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
-  autocmd FileType php setlocal ts=4 sts=4 sw=4 noexpandtab
+  autocmd FileType php setlocal ts=4 sts=4 sw=4 expandtab
 
   " Treat .rss files as XML
   autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
