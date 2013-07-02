@@ -19,3 +19,6 @@
 [submodule "nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "vim-fuzzyfinder"]
+	path = vim-fuzzyfinder
+	url = hg::https://bitbucket.org/ns9tks/vim-fuzzyfinder
