@@ -1,6 +1,9 @@
 " just to be sure
 set nocompatible
 
+" stop saving children
+set shortmess+=I
+
 " setup pathogen
 execute pathogen#infect()
 filetype plugin indent on
