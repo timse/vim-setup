@@ -5,8 +5,13 @@ set nocompatible
 set shortmess+=I
 
 " setup pathogen
+let g:pathogen_disabled = []
+call add(g:pathogen_disabled, 'vim-powerline')
 execute pathogen#infect()
 filetype plugin indent on
+
+" vim-airline powerline fonts
+let g:airline_powerline_fonts = 1
 
 " set solarized theme
 syntax on
