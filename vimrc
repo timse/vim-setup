@@ -12,6 +12,7 @@ filetype plugin indent on
 
 " vim-airline powerline fonts
 let g:airline_powerline_fonts = 1
+let g:airline_theme='solarized'
 
 " set solarized theme
 syntax on
