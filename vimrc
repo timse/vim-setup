@@ -5,8 +5,14 @@ set nocompatible
 set shortmess+=I
 
 " setup pathogen
+let g:pathogen_disabled = []
+call add(g:pathogen_disabled, 'vim-powerline')
 execute pathogen#infect()
 filetype plugin indent on
+
+" vim-airline powerline fonts
+let g:airline_powerline_fonts = 1
+let g:airline_theme='solarized'
 
 " set solarized theme
 syntax on
@@ -53,7 +59,8 @@ if has("autocmd")
   autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab
   autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
   autocmd FileType ruby setlocal ts=2 sts=2 sw=2 expandtab
-  autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
+  autocmd FileType javascript setlocal ts=2 sts=2 sw=2 expandtab
+  autocmd FileType coffee setlocal ts=2 sts=2 sw=2 expandtab
   autocmd FileType php setlocal ts=4 sts=4 sw=4 expandtab
 
   " Treat .rss files as XML
