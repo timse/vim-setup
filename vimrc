@@ -12,7 +12,7 @@ filetype plugin indent on
 
 " vim-airline powerline fonts
 let g:airline_powerline_fonts = 1
-let g:airline_theme='solarized'
+let g:airline_theme = 'solarized'
 
 " set solarized theme
 syntax on
@@ -66,3 +66,8 @@ if has("autocmd")
   autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
   autocmd BufNewFile,BufRead *.pp,Puppetfile setfiletype ruby
 endif
+
+let g:vdebug_options = {}
+let g:vdebug_options["debug_file"] = "~/.vdebug.log"
+let g:vdebug_options["path_maps"] = {"/home/stange/webs/git": "/Users/hauke/Development/jimdo"}
+let g:vdebug_options["server"] = '192.168.14.23'
