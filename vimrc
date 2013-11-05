@@ -30,7 +30,7 @@ set cursorline
 
 " show tabs, line endings and trailing spaces
 set listchars=tab:▸\ ,eol:¬,trail:␣,extends:⇉,precedes:⇇,nbsp:·
-set list!
+set list
 
 " no linewrapping
 set nowrap
