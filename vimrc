@@ -70,8 +70,8 @@ endif
 " configuration of vdebug
 let g:vdebug_options = {}
 let g:vdebug_options["debug_file"] = "~/.vdebug.log"
-let g:vdebug_options["path_maps"] = {"/home/stange/webs/git": "/Users/hauke/Development/jimdo"}
-let g:vdebug_options["server"] = '192.168.14.23'
+let g:vdebug_options["path_maps"] = {"/home/stange/webs/git": "/Users/hauke/Development/jimdo", "/vagrant": "/Users/hauke/code/shindig"}
+let g:vdebug_options["server"] = '0.0.0.0'
 
 " configuration of vim markdown
 let g:vim_markdown_folding_disabled=1
