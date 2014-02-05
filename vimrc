@@ -80,3 +80,6 @@ let g:vdebug_options["server"] = '0.0.0.0'
 
 " configuration of vim markdown
 let g:vim_markdown_folding_disabled=1
+
+" configuration of ack plugin
+let g:ackprg="/usr/local/bin/ack -H --nocolor --nogroup --column"
