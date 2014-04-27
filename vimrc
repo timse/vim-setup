@@ -22,6 +22,7 @@ let g:airline_theme = 'solarized'
 " set solarized theme
 syntax on
 set background=dark
+let g:solarized_termtrans=1
 colorscheme solarized
 
 " searching
