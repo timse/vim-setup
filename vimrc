@@ -38,7 +38,7 @@ set whichwrap+=<,>,h,l
 " Ignore case when searching
 set ignorecase
 
-" When searching try to be smart about cases 
+" When searching try to be smart about cases
 set smartcase
 
 " Highlight search results
@@ -66,7 +66,7 @@ set t_vb=
 set tm=500
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" "stolen" from awesome rc
+" from awesome rc
 " => Files, backups and undo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Turn backup off, since most stuff is in SVN, git et.c anyway...
@@ -112,7 +112,7 @@ set list
 " no linewrapping
 set nowrap
 
-" add scroll offset 
+" add scroll offset
 set so=15
 
 " fancy powerline symbols
@@ -126,7 +126,7 @@ set hidden
 cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" also "stolen" from awesome rc
+" from awesome rc
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use spaces instead of tabs
@@ -180,12 +180,6 @@ let g:vim_markdown_folding_disabled=1
 " configuration of ack plugin
 let g:ackprg="/usr/local/bin/ack -H --nocolor --nogroup --column"
 
-" map FufBuffer
-map <leader>f :FufBuffer<cr>
-
-" map BufExplorer
-map <leader>b :BufExplorer<cr>
-
 " map NERDTreeToggle
 map <leader>t :NERDTreeToggle<cr>
 
@@ -237,7 +231,7 @@ map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 " Switch CWD to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
 
-" Specify the behavior when switching between buffers 
+" Specify the behavior when switching between buffers
 try
   set switchbuf=useopen,usetab,newtab
   set stal=2
@@ -266,7 +260,7 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ 
 " => Editing mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remap VIM 0 to first non-blank character
-map 0 ^
+" map 0 ^
 
 " Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
 nmap <M-j> mz:m+<cr>`z
@@ -409,3 +403,10 @@ function! <SID>BufcloseCloseIt()
      execute("bdelete! ".l:currentBufNum)
    endif
 endfunction
+
+""""""""""""""""""""""""""""""""""""""""""""
+" => More stuffs n stuffs
+"""""""""""""""""""""""""""""""""""""""""""
+map <leader>dw :FixWhitespace<cr>
+map <leader>f :CommandT<cr>
+
