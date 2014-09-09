@@ -105,6 +105,9 @@ set number
 " highlight the cursorline
 set cursorline
 
+" highlight the cursorcolumn
+set cursorcolumn
+
 " show tabs, line endings and trailing spaces
 set listchars=tab:▸\ ,eol:¬,trail:␣,extends:⇉,precedes:⇇,nbsp:·
 set list
