@@ -414,3 +414,13 @@ endfunction
 map <leader>dw :FixWhitespace<cr>
 map <leader>f :CommandT<cr>
 
+
+""""""""""""""""""""""""""""""""""""""""""""
+" => Copy pasta help from bunsen (http://www.drbunsen.org/the-text-triumvirate/)
+"""""""""""""""""""""""""""""""""""""""""""
+" Yank text to the OS X clipboard
+noremap <leader>y "*y
+noremap <leader>yy "*Y
+
+" Preserve indentation while pasting text from the OS X clipboard
+noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
