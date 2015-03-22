@@ -412,7 +412,11 @@ endfunction
 " => More stuffs n stuffs
 """""""""""""""""""""""""""""""""""""""""""
 map <leader>dw :FixWhitespace<cr>
-map <leader>f :CommandT<cr>
+
+""""""""""""""""""""""""""""""""""""""""""""
+" => Ctrl P config
+"""""""""""""""""""""""""""""""""""""""""""
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|bower_components'
 
 
 """"""""""""""""""""""""""""""""""""""""""""
